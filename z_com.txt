@@ -1,0 +1,95 @@
+تابع سرچ open factor 
+کار نمیکنه
+
+
+
+
+Designer
+#v1
+pip list | findstr PyQt  
+pip install pyqt5-tools      
+# def show_table(self):
+        
+    #     for item in self.factor_list:
+    #         self.total += item["Total"]
+    #     self.lineEdit_total.setText(str(self.total))
+
+    #     coul_name = ['id','name','No','price','Total','Add','Delete']
+    #     cols = len(coul_name)
+    #     rows = len(self.factor_list)
+    #     row = int
+    #     self.tableWidget.setColumnCount(cols)
+    #     self.tableWidget.setRowCount(rows)
+    #     font = QtGui.QFont()
+    #     font.setPointSize(15)
+    #     font.setBold(True)
+        
+    
+    #     for row in range(rows):
+    #         item = QTableWidgetItem(str(row+1))
+    #         self.tableWidget.setVerticalHeaderItem(row , item)
+    #     for index, col_name in enumerate(coul_name):
+    #         item = QTableWidgetItem(col_name)
+    #         item.setFont(font)
+    #         self.tableWidget.setHorizontalHeaderItem(index,item)
+    #     for row in range(rows):
+    #         for col in range(cols-2):
+    #             item = QTableWidgetItem()
+    #             item.setText(str(self.factor_list[row][coul_name[col]]))
+    #             item.setFlags(True)
+                
+    #             self.tableWidget.setItem(row , col , item)
+                
+    #             # item.setFlags(QtCore.Qt.ItemFlag)
+    #             # vipfont = QtGui.QFont()
+    #             # vipfont.setPointSize(15)
+    #             # item.setFont(vipfont)
+    #             # item.setFlags(QtCore.Qt.NoItemFlags)
+    #             # item.setTextAlignment(QtCore.Qt.Qt.AlignCenter)
+    #             # item.setTextAlignme
+                
+               
+    #     for row in range(rows):
+    #         for col in range(5,7):
+        
+    #             item = QTableWidgetItem('Add' if col == 5 else 'Delete')
+    #             # item.setTextAlignment(QtCore.Qt.AlignCenter)
+    #             item.setFont(font)
+    #             item.setFlags(Qt.ItemFlag.ItemIsEnabled)
+    #             # brush = QtGui.QBrush(QtGui.QColor(255,85,0))
+    #             # brush.setStyle(QtCore.Qt.Nobrush)nt(QtCore.Qt.AlignCenter)
+    #             # item.setForeground(brush)
+    #             # item.setFlags(QtCore.Qt.itemisenable)
+    #             self.tableWidget.setItem(row,col,item)
+    #     self.comboBoxPname.setCurrentIndex(0)
+    #     self.spinBoxNo.setValue(0)
+
+
+
+
+
+
+# v1
+    # def add_to_list(self): 
+    #     index = self.comboBoxPname.currentIndex()
+    #     self.products = list(self.products)
+    #     data = self.products[index]
+    #     print(f"data = {data}")
+    #     print(f"no = {No}")
+    #     No = self.spinBoxNo.value()
+    #     if data["id"]==-1 or No ==0:
+    #         return
+        
+    #     new_row = {'id':data['id'],
+    #                'name':data['name'],
+    #                'price':data['price'] ,
+    #                  'No':No ,'Total':data['price']*No}
+    #     for row in self.factor_list:
+    #         if row['id']== new_row["id"]:
+    #             row['No']+= No
+    #             row['Total']+= new_row['Total']
+    #             break
+    #         else:
+    #             self.factor_list.append(new_row)
+    #     self.pushButton_save.setEnabled(True)
+    #     self.show_table()
